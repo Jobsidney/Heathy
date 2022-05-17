@@ -35,17 +35,24 @@ body{
     padding-bottom: 10px;
 }
 
-#backImage{background-color: #8AD4DB;
-
+#backImage{
+    background-color: #8AD4DB;
+    
     height: 500px; 
     display: flex;
     flex-direction: row;
+}
+.AllMotto{
+    display: flex;
+    flex-direction: column;
+    padding-top:60px;
 }
 #backImage>div>#motto{
     font-size: 35px;
     color: #0E1658;
     font-weight: bold;
     font-family: Poppins;
+
 }
 #backImage>div button{
     background-color: #3CA6A6;
@@ -56,6 +63,7 @@ body{
     margin-left: 10px;
     color: white;
     font-weight: 900;
+    margin-top: 14vh;
 }
 .FloatCards{
     display: flex;
