@@ -21,8 +21,8 @@ const doctorData = [
     {
         doctorName:"Mary Mwangangi",
         station:"Texas Hospice",
-        specialization:"Dr Mwangangi is currently in charge of giving continued care to the cancer patients at the Texas Hospice.<br> She is dedicated to ensuring taht cancer patients are able to feel cared for during tehir treatment. ",
-        description:""
+        specialization:"Cancer Care",
+        description:"Dr Mwangangi is currently in charge of giving continued care to the cancer patients at the Texas Hospice.<br> She is dedicated to ensuring taht cancer patients are able to feel cared for during tehir treatment. ",
     },
     {
         doctorName:"Ouma Opondo",
@@ -121,3 +121,29 @@ const getDetDocSix =() => {
 
 }
 getDetDocSix();
+
+
+// get ids for constants to be used in Making appointments
+const userName = document.getElementById('tx-1');
+const userDate = document.getElementById('tx-2');
+const useEmail = document.getElementById('tx-3');
+const phoneNo = document.getElementById('tx-4');
+const button = document.getElementById('btn');
+//
+userName.innerText;
+userDate.innerText;
+useEmail.innerText;
+phoneNo.innerText;
+// create constant to hold
+const appointments = [];
+//function to make an appointment
+const makeAppointment= () => {
+    appointments.push(userName.value);
+    appointments.push(userDate.value);
+    appointments.push(useEmail.value);
+    appointments.push(phoneNo.value);
+}
+makeAppointment();
+console.log(appointments);
+
+
