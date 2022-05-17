@@ -35,22 +35,34 @@ body{
     margin-top: 5%;
     font-style: italic;
 }
+.btn-3{
+    width: 400px;
+    height: 50px;
+    background-color: #19214D;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+}
 .main2{
     margin-left: 5%;
+    display: flex;
 }
 form{
     border-radius: 30px;
     background-color: #ffffff;
     width: fit-content;
     padding: 4%;
-    font-size: 25px;
+    font-size: 30px;
 }
 form input{
-    width: 200px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
-.main2 button{
+.btn-1{
     width: 200px;
     height: 50px;
     background-color: #19214D;
@@ -60,4 +72,5 @@ form input{
     font-size: 30px;
     margin-top: 50px;
 }
+.content-1
 

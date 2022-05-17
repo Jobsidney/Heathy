@@ -123,27 +123,44 @@ const getDetDocSix =() => {
 getDetDocSix();
 
 
-// get ids for constants to be used in Making appointments
-const userName = document.getElementById('tx-1');
-const userDate = document.getElementById('tx-2');
-const useEmail = document.getElementById('tx-3');
-const phoneNo = document.getElementById('tx-4');
-const button = document.getElementById('btn');
-//
-userName.innerText;
-userDate.innerText;
-useEmail.innerText;
-phoneNo.innerText;
-// create constant to hold
-const appointments = [];
-//function to make an appointment
-const makeAppointment= () => {
-    appointments.push(userName.value);
-    appointments.push(userDate.value);
-    appointments.push(useEmail.value);
-    appointments.push(phoneNo.value);
+var appointments = [];
+
+function makeAppointment() {
+  userName = document.getElementById('tx-1').value;
+  userDate = document.getElementById('tx-2').value;
+  useEmail = document.getElementById('tx-3').value;
+  phoneNo = document.getElementById('tx-4').value;
+
+  appointments.push(userName);
+  appointments.push(userDate);
+  appointments.push(useEmail);
+  appointments.push(phoneNo);
+  console.log(appointments);
+  return false; // stop submission
 }
-makeAppointment();
-console.log(appointments);
+
+//Function to display appointment details and see if they are correct
+function viewAppointments(){
+    text1 = document.getElementById('txt1');
+    text2 = document.getElementById('txt2');
+    text3 = document.getElementById('txt3');
+    text4 = document.getElementById('txt4');
+
+    text1.innerHTML = (appointments[0]);
+    text2.innerHTML = (appointments[1]);
+    text3.innerHTML = (appointments[2]);
+    text4.innerHTML = (appointments[3]);
+    return false;
+}
+
+//delete an appointment
+function deleteAppointment(){
+    while (appointments.length > 0)
+    appointments.pop();
+    return false;
+}
+
+
+
 
 
