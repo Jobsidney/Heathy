@@ -1,10 +1,13 @@
 body{
-    background-color: #F5F5F5;
+    background-color: #EBEAF8;
 }
 #NavBar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+#NavBar>div>img{
+    width: 150px;
 }
 #NavBar>nav>ul{
     display: flex;
@@ -15,10 +18,120 @@ body{
     list-style: none;
     margin-right: 30px;
     font-size: x-large;
+    color: #0E1658;
+    font-weight: 545;
 }
-#backImage{
-    background-image: url('../images/DOCTO\ LIGHT.webp');
-    background-repeat: no-repeat;
-    height: 10vh;
-    width: ;
+#NavBar>nav>ul>li>button{
+    list-style: none;
+    margin-right: 10px;
+    font-size: large;
+    color: white;
+    font-weight: 545;
+    width: 140px;
+    background-color: #3CA6A6;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#backImage{background-color: #8AD4DB;
+
+    height: 500px; 
+    display: flex;
+    flex-direction: row;
+}
+#backImage>div>#motto{
+    font-size: 35px;
+    color: #0E1658;
+    font-weight: bold;
+    font-family: Poppins;
+}
+#backImage>div button{
+    background-color: #3CA6A6;
+    border:none;
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 900;
+}
+.FloatCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: inline-end;
+    margin-top: -50px;
+}
+#working{
+    background-color: #0E1658;
+    margin-left: 4%;
+    padding: 2px;
+    padding-left: 10px;
+    width: 300px;
+    text-align: start;
+    color: white;
+    margin-left: 6%;
+    border-radius: 4px;
+}
+#emergency{
+    background-color: #3491F2;
+    color: white;
+    margin-right: 6%;
+    padding: 2px;
+    padding-left: 10px;
+    width: 300px;
+    text-align: start;
+    border-radius: 4px;
+}
+#abouts{
+    color: #0E1658;
+    font-family: poppins;
+}
+#descr{
+    display: flex;
+    flex-direction: row;
+}
+.words{
+    margin-top: 10%;
+    margin-left: 18px;
+}
+#services{
+    color: #0E1658;
+    font-family: poppins;
+}
+.allCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imageCards{
+    margin: 10px;
+}
+.imageCards>img{
+    width: 350px;
+    border-radius: 0px 40px 0px 40px;
+}
+#footer{
+    background-color: #458EAA;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 400px;
+    margin-top: 100px;
+    padding-right: 100px;
+}
+footer>div>img{
+    width: 200px;
+}
+#footer>div>table> th,tr{
+    font-size: 130%;
+    color: white;
+    opacity: 0.8;
+   
+    text-align: left;
+}
+table{
+    margin-top: 50px;
 }
