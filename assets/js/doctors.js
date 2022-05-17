@@ -102,7 +102,7 @@ const doctDetFour = document.getElementById('h5-4');
 const getDetDocFive = () => {
     dNameFive.innerHTML = (doctorData[4].doctorName);
     stationFour.innerHTML = (doctorData[4].station);
-    stationFour.innerHTML=(doctorData[4].specialization);
+    specialtyFour.innerHTML=(doctorData[4].specialization);
     doctDetFour.innerHTML = (doctorData[4].description);
 }
 getDetDocFive();
