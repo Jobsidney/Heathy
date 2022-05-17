@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/loginPage.css">
     <title>Login Page</title>
 </head>
@@ -12,18 +15,18 @@
         <div class="backIcon">
 
         </div>
-        <img src="" alt="The hospital Logo" id="mobileImageLogo">
-        <h2>Login</h2>
+
+        <img src="../images/LogoFooterNav.png" alt="The hospital Logo" id="mobileImageLogo" width="150">
+
+        <h2 style="color: #001BB0; margin-left: 10px;">Login</h2>
         <form name="loginForm">
-            <label for="">Email</label><br>
-            <input type="text" name="" id=""><br>
-            <label for="">Password</label><br>
-            <input type="text" name="" id=""><br>
-            <input type="submit" value="Login">
+                <input type="email" name="" id="emailSection" placeholder="Enter Your Email" required>
+                <input type="password" name="" id="passwordSection" placeholder="Enter Your Password" required>
+                <input type="submit" value="Login" id="loginButton">
         </form>
         <div id="mobileLoginFooter">
             <p>New to healthy?</p>
-            <a href="#">Create Account</a>
+            <a href="#" id="createAccountButton">Create Account</a>
         </div>
     </section>
 </body>
