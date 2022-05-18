@@ -16,6 +16,9 @@ h1 {
   margin: 30px;
   height: 100%;
 }
+.container-1 ul {
+  list-style: none;
+}
 .container-1 {
   display: flex;
   flex-direction: row;
@@ -32,30 +35,44 @@ h1 {
 .container-1 .Karen {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
 }
 .container-1 .AghaKhan {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
 }
 
 .container-1 .Kenyatta {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
 }
 .container-2 .Nairobi {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
+  border-radius: solid rgb(38, 38, 66);
+}
+.container-2 .Nairobi-W {
+  font-size: 20px;
+  color: #003366;
+  width: fit-content;
+  border-radius: solid rgb(38, 38, 66);
+}
+.container-2 .MPShah {
+  font-size: 20px;
+  color: #003366;
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
 }
 
-.btn1, .btn2, .btn3 {
+.btn1,
+.btn2,
+.btn3 {
   background-color: #003366;
   height: 40px;
   width: 200px;
@@ -65,21 +82,29 @@ h1 {
   font-size: 20px;
   color: antiquewhite;
   border-style: outset;
-  border-color: #0066A2;
+  border-color: #0066a2;
   text-shadow: none;
   border: 1px solid #eee;
   border-radius: 20px;
-
 }
-.butn:hover {
-  background: #016ABC;
-  color: #fff;
+
+.btn4,
+.btn5,
+.btn6 {
+  background-color: #003366;
+  height: 40px;
+  width: 200px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: antiquewhite;
+  border-style: outset;
+  border-color: #0066a2;
+  text-shadow: none;
   border: 1px solid #eee;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #eee;
-  text-shadow: none;
-  }
-
+}
 
 @media screen and (max-width: 600px) {
   .container-1 {
