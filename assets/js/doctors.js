@@ -130,11 +130,16 @@ function makeAppointment() {
   phoneNo = document.getElementById('tx-4').value;
   specialistDet = document.getElementById('tx-5').value;
 
+  /*localstorage.setItem("Name",userName.value);
+  localstorage.setItem("Date",userDate.value);
+  localstorage.setItem("email",useEmail.value);
+  localstorage.setItem("phone", phoneNo.value);
+  localstorage.setItem("specialist",specialistDet.value);*/
   appointments.push(userName);
   appointments.push(userDate);
   appointments.push(useEmail);
   appointments.push(phoneNo);
-  appointments.push(specialistDet)
+  appointments.push(specialistDet);
   console.log(appointments);
   return false; 
   alert ('successfully made an appointment');
@@ -147,7 +152,12 @@ function viewAppointments(){
     text4 = document.getElementById('txt4');
     text5 = document.getElementById('txt5')
 
-    text1.innerHTML = (appointments[0]);
+    /*text1.innerHTML = (localstorage.getItem("Name"));
+    text2.innerHTML = localstorage.getItem("Date");
+    text3.innerHTML = localstorage.getItem("email");
+    text4.innerHTML = localstorage.getItem("phone");
+    text5.innerHTML = localStorage.getItem("specialist");*/
+    text1.innerHTML = (appointments[0])
     text2.innerHTML = (appointments[1]);
     text3.innerHTML = (appointments[2]);
     text4.innerHTML = (appointments[3]);
@@ -157,11 +167,12 @@ function viewAppointments(){
 
 //delete an appointment
 function deleteAppointment(){
-    while (appointments.length > 0)
+    while (appointments.length > 0){
     appointments.pop();
-    return false;
+    console.log(appointments);
+    }
+    alert('Successfully deleted the appointment');
 }
-
 
 
 
