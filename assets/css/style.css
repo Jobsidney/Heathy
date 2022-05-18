@@ -1,10 +1,14 @@
+
 body{
-    background-color: #F5F5F5;
+    background-color: #EBEAF8;
 }
 #NavBar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+#NavBar>div>img{
+    width: 150px;
 }
 #NavBar>nav>ul{
     display: flex;
@@ -15,10 +19,686 @@ body{
     list-style: none;
     margin-right: 30px;
     font-size: x-large;
+    color: #0E1658;
+    font-weight: 545;
 }
+#NavBar>nav>ul>li>a>button{
+    list-style: none;
+    margin-right: 10px;
+    font-size: large;
+    color: white;
+    font-weight: 545;
+    width: 140px;
+    background-color: #3CA6A6;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#NavBar>nav>ul>li>a>button:hover{
+    background-color: #0E1658;
+    transition: 1s;
+    
+
+}
+
 #backImage{
-    background-image: url('../images/DOCTO\ LIGHT.webp');
-    background-repeat: no-repeat;
-    height: 10vh;
-    width: ;
+    background-color: #86D4FB;
+    height: 500px; 
+    display: flex;
+    flex-direction: row;
+    padding-left: 4%;
+    
+}
+#backImage:hover{
+    padding-left: 8%;
+    scroll-behavior: smooth;
+    transition-duration: 2s;
+}
+.AllMotto{
+    display: flex;
+    flex-direction: column;
+    padding-top:60px;
+}
+#backImage>div>#motto{
+    font-size: 35px;
+    color: #0E1658;
+    font-weight: bold;
+    font-family: Poppins;
+
+}
+#backImage>div button{
+    background-color: #3CA6A6;
+    background-blend-mode: darken;
+    border:none;
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: rgb(236, 233, 233);
+    font-weight: 900;
+    margin-top: 14vh;
+}
+.FloatCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: inline-end;
+    margin-top: -50px;
+}
+#working{
+    background-color: #0E1658;
+    margin-left: 4%;
+    padding: 10px;
+    padding-left: 10px;
+    width: 300px;
+    text-align: start;
+    color: white;
+    margin-left: 6%;
+    border-radius: 4px;
+}
+#emergency{
+    background-color: #3491F2;
+    color: white;
+    margin-right: 6%;
+    padding: 10px;
+    padding-left: 10px;
+    width: 300px;
+    text-align: start;
+    border-radius: 4px;
+}
+#emergency,#working ul{
+    font-size: large;
+}
+#abouts{
+    color: #0E1658;
+    font-family: poppins;
+    margin-top: 10%;
+    font-size: x-large;
+    text-decoration: underline;
+    padding-left: 4%;
+}
+#AboutSection:hover{
+    padding-left: 6%;
+    scroll-behavior: smooth;
+    transition-duration: 3s;
+}
+#descr{
+    display: flex;
+    flex-direction: row;
+}
+.words{
+    margin-top: 10%;
+    margin-left: 18px;
+}
+.words>.healthy{
+    font-size:large;
+}
+#services{
+    color: #0E1658;
+    font-family: poppins;
+    margin-top: 10%;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.allCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.FirstCards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.imageCards{
+    margin: 10px;
+}
+.imageCards>h3{
+    color: #0E1658;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.imageCards>img{
+    width: 100%;
+    max-width: 320px;
+    border-radius: 0px 40px 0px 40px;
+}
+#footer{
+    background-color: #458EAA;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 400px;
+    margin-top: 100px;
+    padding-right: 100px;
+}
+footer>div>img{
+    width: 200px;
+}
+#footer>div>table> th,tr{
+    font-size: 130%;
+    color: white;
+    opacity: 0.8;
+   
+    text-align: left;
+}
+table{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERY tablets */
+
+
+@media screen and (max-width:900px) {
+
+    #NavBar>div>img{
+        width: 100px;
+    }
+    #NavBar>nav>ul{
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+    }
+    #NavBar>nav>ul>li{
+        list-style: none;
+        font-size: x-large;
+        color: #0E1658;
+        font-weight: 545;
+    }
+    #NavBar>nav>ul>li>a>button{
+        list-style: none;
+        margin-right: 10px;
+        font-size: large;
+        color: white;
+        font-weight: 545;
+        width: max-content;
+        background-color: #3CA6A6;
+        border: none;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    
+    #backImage{
+        background-color: #86D4FB;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        
+    }
+
+    .AllMotto{
+        display: flex;
+        flex-direction: column;
+        padding-top:60px;
+    }
+
+    #injection>img{
+        padding-top: 10vh;
+        width: 200px;
+        margin-right: 10px;
+    }
+    #backImage>div button{
+        background-color: #3CA6A6;
+        background-blend-mode: darken;
+        border:none;
+        height: 50px;
+        width: 120px;
+        border-radius: 10px;
+        margin-left: 10px;
+        color: rgb(236, 233, 233);
+        font-weight: 900;
+        margin-top: 10vh;
+    }
+    .FloatCards{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        float: inline-end;
+        margin-top: -50px;
+    }
+    #working{
+        background-color: #0E1658;
+        padding: 10px;
+        padding-left: 10px;
+        width: 300px;
+        text-align: start;
+        color: white;
+        border-radius: 4px;
+    }
+    #emergency{
+        background-color: #3491F2;
+        color: white;
+        padding: 10px;
+        padding-left: 10px;
+        width: 300px;
+        text-align: start;
+        border-radius: 4px;
+    }
+    #emergency ul,#working ul{
+        font-size: large;
+        list-style: none;
+    }
+
+    #abouts{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+        padding-left: 4%;
+    }
+    #AboutSection:hover{
+        padding-left: 6%;
+        scroll-behavior: smooth;
+        transition-duration: 3s;
+    }
+    #descr{
+        display: flex;
+        flex-direction: row;
+    }
+    #descr>div>img{
+        width: 500px;
+    }
+    .words{
+        margin-top: 10%;
+        margin-left: 18px;
+    }
+    .words>h3{
+        font-size: xx-large;
+    }
+    .words>.healthy{
+        font-size:x-large;
+    }
+    #services{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+    }
+    .allCards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 2%;
+    }
+
+    .imageCards{
+        margin: 10px;
+    }
+    .imageCards>h3{
+        color: #0E1658;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+    .imageCards>img{
+        width: 100%;
+        max-width: 260px;
+        border-radius: 0px 40px 0px 40px;
+    }
+
+    
+}
+
+/* MEDIA QUERY PHONES */
+
+@media screen and (max-width:700px) {
+    #NavBar>div>img{
+        width: 100px;
+    }
+    #NavBar>nav>ul{
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+    }
+    #NavBar>nav>ul>li{
+        list-style: none;
+        font-size: x-large;
+        color: #0E1658;
+        font-weight: 545;
+    }
+    #NavBar>nav>ul>li>a>button{
+        list-style: none;
+        margin-right: 10px;
+        font-size: large;
+        color: white;
+        font-weight: 545;
+        width: max-content;
+        background-color: #3CA6A6;
+        border: none;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    
+    #backImage{
+        background-color: #86D4FB;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        
+    }
+
+    .AllMotto{
+        display: flex;
+        flex-direction: column;
+        padding-top:60px;
+    }
+
+    #injection>img{
+        padding-top: 10vh;
+        width: 200px;
+        margin-right: 10px;
+    }
+    #backImage>div button{
+        background-color: #3CA6A6;
+        background-blend-mode: darken;
+        border:none;
+        height: 50px;
+        width: 120px;
+        border-radius: 10px;
+        margin-left: 10px;
+        color: rgb(236, 233, 233);
+        font-weight: 900;
+        margin-top: 10vh;
+    }
+    .FloatCards{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        float: inline-end;
+        margin-top: -50px;
+    }
+    #working{
+        background-color: #0E1658;
+        padding: 10px;
+        padding-left: 10px;
+        width: 300px;
+        text-align: start;
+        color: white;
+        border-radius: 4px;
+    }
+    #emergency{
+        background-color: #3491F2;
+        color: white;
+        padding: 10px;
+        padding-left: 10px;
+        width: 300px;
+        text-align: start;
+        border-radius: 4px;
+    }
+    #emergency ul,#working ul{
+        font-size: large;
+        list-style: none;
+    }
+
+    #abouts{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+        padding-left: 4%;
+    }
+    #AboutSection:hover{
+        padding-left: 6%;
+        scroll-behavior: smooth;
+        transition-duration: 3s;
+    }
+    #descr{
+        display: flex;
+        flex-direction: column;
+    }
+    #descr>div>img{
+        width: 300px;
+    }
+    .words{
+        margin-top: 10%;
+        margin-left: 18px;
+    }
+    .words>h3{
+        font-size: xx-large;
+    }
+    .words>.healthy{
+        font-size:x-large;
+    }
+    #services{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+    }
+    .allCards{
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 2%;
+    }
+    .FirstCards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    
+    .imageCards{
+        margin: 10px;
+    }
+    .imageCards>h3{
+        color: #0E1658;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+    .imageCards>img{
+        width: 100%;
+        max-width: 260px;
+        border-radius: 0px 40px 0px 40px;
+    }
+    #footer{
+        background-color: #458EAA;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 400px;
+        margin-top: 100px;
+        padding-right: 100px;
+    }
+    footer>div>img{
+        width: 100px;
+    }
+    #footer>div>table> th,tr{
+        font-size: 130%;
+        color: white;
+        opacity: 0.8;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #NavBar>div>img{
+        width: 90px;
+    }
+    #NavBar>nav>ul>li{
+        list-style: none;
+        margin-right: 10px;
+       
+        color: #0E1658;
+        font-weight: 545;
+        font-size: medium;
+    }
+
+    #NavBar>nav>ul>li>a>button{
+        list-style: none;
+        margin-right: 10px;
+        font-size: small;
+        color: white;
+        font-weight: 545;
+        width: max-content;
+        background-color: #3CA6A6;
+        border: none;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+
+    
+    #backImage{
+        background-color: #86D4FB;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        
+    }
+
+    .AllMotto{
+        display: flex;
+        flex-direction: column;
+        padding-top:30px;
+    }
+    .AllMotto>h1{
+        font-size: small;
+    }
+    #motto{
+        font-size: small;
+        margin-top: 0px;
+    }
+
+    #injection>img{
+        padding-top: 10vh;
+        width: 180px;
+        margin-right: 50px;
+    }
+    #backImage>div button{
+        background-color: #3CA6A6;
+        background-blend-mode: darken;
+        border:none;
+        height: 50px;
+        width: 120px;
+        border-radius: 10px;
+        margin-left: 2px;
+        color: rgb(236, 233, 233);
+        font-weight: 900;
+        margin-top: 1vh;
+    }
+    .FloatCards{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        float: inline-end;
+        margin-top: -40px;
+        margin-left: 2px;
+    }
+    #working{
+        background-color: #0E1658;
+        padding: 10px;
+        padding-left: 2px;
+        width: 300px;
+        text-align: start;
+        color: white;
+        border-radius: 4px;
+    }
+    #emergency{
+        background-color: #3491F2;
+        color: white;
+        padding: 10px;
+        padding-left: 2px;
+        width: 300px;
+        max-height: 200px;
+        text-align: start;
+        border-radius: 4px;
+    }
+    #emergency ul,#working ul{
+        font-size: medium;
+        list-style: none;
+        padding-left: 5px;
+    }
+
+
+    #abouts{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+        padding-left: 4%;
+    }
+    #AboutSection:hover{
+        padding-left: 6%;
+        scroll-behavior: smooth;
+        transition-duration: 3s;
+    }
+    #descr{
+        display: flex;
+        flex-direction: column;
+    }
+    #descr>div>img{
+        width: 300px;
+    }
+    .words{
+        margin-top: 10%;
+        margin-left: 18px;
+    }
+    .words>h3{
+        font-size: xx-large;
+    }
+    .words>.healthy{
+        font-size:x-large;
+    }
+    #services{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+    }
+    .allCards{
+        
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 2%;
+    }
+    .FirstCards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    
+    .imageCards{
+        margin: 10px;
+    }
+    .imageCards>img{
+        width: 100%;
+        max-width: 250px;
+        border-radius: 0px 40px 0px 40px;
+    }
+    #footer{
+        background-color: #458EAA;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 200px;
+        margin-top: 70px;
+        padding-right: 100px;
+    }
+    footer>div>img{
+        width: 100px;
+    }
+    #footer>div>table> th,tr{
+        font-size: 100%;
+ 
+    }
+
+    
 }
