@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
 }
+a:hover {
+  background-color: rgb(194, 40, 122);
+}
 h1 {
   padding-top: 10px;
-  background-color: linear-gradient(315deg, #0cbaba 0%, hwb(302 3% 77%) 69%);
   font-size: 50px;
   text-align: center;
   color: white;
+  padding-bottom: 30px;
+  height: 30px;
 }
 .container {
   padding: 30px;
@@ -15,62 +19,81 @@ h1 {
   margin: 30px;
   height: 100%;
 }
-.container-1 ul, .container-2 ul{
+.container-1 ul,
+.container-2 ul {
   list-style: none;
+  padding-left: 10px;
+  font-size: 25px;
+  color: #ffffff;
 }
 .container-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 33, 33%;
-  border-radius: solid rgb(38, 38, 66);
+  padding-top: 20px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .container-2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 33, 33%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .container-1 .Karen {
   font-size: 20px;
-  color: #003366;
-  width: fit-content; 
+  color: #ffff;
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
+  background-color: rgb(32, 17, 66);
 }
 .container-1 .AghaKhan {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
+  background-color: rgb(32, 17, 66);
 }
 
 .container-1 .Kenyatta {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
+  background-color: rgb(32, 17, 66);
 }
 .container-2 .Nairobi {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
+  background-color: rgb(32, 17, 66);
 }
 .container-2 .Nairobi-W {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
+  background-color: rgb(32, 17, 66);
 }
 .container-2 .MPShah {
   font-size: 20px;
   color: #003366;
-  width: fit-content; 
+  width: fit-content;
   border-radius: solid rgb(38, 38, 66);
+  background-color: rgb(32, 17, 66);
 }
 
-.btn1, .btn2, .btn3 {
-  background-color: #003366;
+.btn1,
+.btn2,
+.btn3 {
+  background-color: rgb(38, 38, 66);
   height: 40px;
   width: 200px;
   padding: 5px;
@@ -79,15 +102,18 @@ h1 {
   font-size: 20px;
   color: antiquewhite;
   border-style: outset;
-  border-color: #0066A2;
+  border-color: #0066a2;
   text-shadow: none;
   border: 1px solid #eee;
   border-radius: 20px;
-
+  font-weight: 700;
 }
 
-.btn4, .btn5, .btn6 {
-  background-color: #003366;
+.btn4,
+.btn5,
+.btn6 {
+  background-color: rgb(38, 38, 66);
+  font-weight: 700;
   height: 40px;
   width: 200px;
   padding: 5px;
@@ -96,11 +122,10 @@ h1 {
   font-size: 20px;
   color: antiquewhite;
   border-style: outset;
-  border-color: #0066A2;
+  border-color: #0066a2;
   text-shadow: none;
   border: 1px solid #eee;
   border-radius: 20px;
-
 }
 
 @media screen and (max-width: 600px) {
