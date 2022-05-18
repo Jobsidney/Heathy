@@ -1,5 +1,7 @@
+
 body{
     background: #f3f5f5;
+    position: relative;
 }
 .main{
     display: flex;
