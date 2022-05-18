@@ -1,5 +1,5 @@
 body{
-    background: #dbdada;
+    background: #f3f5f5;
 }
 .main{
     display: flex;
@@ -18,7 +18,7 @@ body{
     height: 200px;
 }
 #box1, #box2, #box3, #box4, #box5, #box6{
-    background: linear-gradient(#458EAA,#19214D, #78e7d5);
+    background: linear-gradient(#458EAA,#8abcc9, #78e7d5);
     margin-left: 50px;
     margin-right: 50px;
     width: 800px;
@@ -82,4 +82,43 @@ form input{
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 30px;
+}
+#sect-2{
+    background: url('/assets/images/derek-finch-zkrPU_1AwdU-unsplash.jpg');
+    margin-top: 5%;
+    padding: 10%;
+    font-size: 30px;
+    background-size: cover;
+    height: 40vh;
+    color: black;
+    text-align: center;
+}
+@media screen and (max-width: 800px){
+    .container-1{
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+        height: fit-content;
+        font-size: 10px;
+        position: relative;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        position: relative;
+    }  
+    .main-1{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        position: relative;
+    }
+    #sect-2{
+        font-size: 15px;
+        width: fit-content;
+        height: fit-content;
+    }
 }
