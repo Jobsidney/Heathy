@@ -28,7 +28,7 @@ const doctorData = [
         doctorName:"Ouma Opondo",
         station:"Nairobi Women's hospital",
         specialization:"Cancer research",
-        description:"Dr Ouma has undertaken extensive cancer research across Africa.<br> Particularly, he is well-versed with teh screening and control methods of cervical cancer if detecetd early in advance. "
+        description:"Dr Ouma has undertaken extensive cancer research across Africa.<br> Particularly, he is well-versed with the screening and control methods of cervical cancer if detecetd early in advance. "
     },
     {
         doctorName:"Peter Waluke",
@@ -122,34 +122,36 @@ const getDetDocSix =() => {
 }
 getDetDocSix();
 
-
 var appointments = [];
-
 function makeAppointment() {
   userName = document.getElementById('tx-1').value;
   userDate = document.getElementById('tx-2').value;
   useEmail = document.getElementById('tx-3').value;
   phoneNo = document.getElementById('tx-4').value;
+  specialistDet = document.getElementById('tx-5').value;
 
   appointments.push(userName);
   appointments.push(userDate);
   appointments.push(useEmail);
   appointments.push(phoneNo);
+  appointments.push(specialistDet)
   console.log(appointments);
-  return false; // stop submission
+  return false; 
+  alert ('successfully made an appointment');
 }
-
 //Function to display appointment details and see if they are correct
 function viewAppointments(){
     text1 = document.getElementById('txt1');
     text2 = document.getElementById('txt2');
     text3 = document.getElementById('txt3');
     text4 = document.getElementById('txt4');
+    text5 = document.getElementById('txt5')
 
     text1.innerHTML = (appointments[0]);
     text2.innerHTML = (appointments[1]);
     text3.innerHTML = (appointments[2]);
     text4.innerHTML = (appointments[3]);
+    text5.innerHTML = (appointments[4]);
     return false;
 }
 
