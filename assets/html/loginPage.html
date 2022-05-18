@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/edfee8f41c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/loginPage.css">
+    <script src="https://kit.fontawesome.com/edfee8f41c.js" crossorigin="anonymous"></script>
     <title>Login Page</title>
 </head>
 <body>
     <section id="mobileLoginContainer">
-        <div class="backIcon">
-            <i class="fa-solid fa-arrow-left-long"></i>
-        </div>
 
         <img src="../images/LogoFooterNav.png" alt="The hospital Logo" id="mobileImageLogoBlue" width="150">
-        <img src="../images/Healthy.png" alt="The hospital Logo" id="mobileImageLogoWhite" width="150">
+        <img src="../images/Healthy.png" alt="The hospital Logo" id="mobileImageLogoWhite" width="200">
 
         
-        <form name="loginForm" id="form">
+        <form name="loginForm" id="loginForm">
                 <h2>Login</h2>
-                <input type="email" name="" id="emailSection" placeholder="Enter Your Email" required>
-                <input type="password" name="" id="passwordSection" placeholder="Enter Your Password" required>
-                <input type="submit" value="Login" id="loginButton">
-                <!-- <div id="mobileLoginFooter">
-                    <p>New to healthy?</p>
-                    <a href="#" id="createAccountButton">Create Account</a>
-                </div> -->
+                <input type="email" name="usrName" id="emailLoginSection" placeholder="Enter Your Email" required>
+                <input type="password" name="passwrd" id="passwordLoginSection" placeholder="Enter Your Password" required>
+                <input type="submit" value="Login" id="loginButton"><br>
+                <input type="button" value="Create Account" id="createAccount">
+        </form>
+        <form name="registerForm" id="registerForm">
+                <h2>Register</h2>
+                <input type="email" name="usrName" id="emailRegisterSection" placeholder="Enter Your Email" required>
+                <input type="password" name="password" id="passwordRegisterSection" placeholder="Enter Your Password" required>
+                <input type="submit" value="Register" id="registerButton"><br>
+                <input type="button" value="Login Account" id="registerAccount">
         </form>
         
     </section>
+
+
+    <script src="../js/loginPage.js"></script>
 </body>
 </html>

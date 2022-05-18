@@ -20,16 +20,37 @@ body{
         align-self: center;
         margin-top: 10px;
     }
-    form{
+    #loginForm{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-top: 20px;
+        /* display: none; */
     }
-    form > *{
+    #loginForm > *{
         margin-bottom: 10px;
     }
-    form > h2{
+    #loginForm > h2{
+        color: #001BB0; 
+        margin-left: 10px;
+    }
+    #registerForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        border: 1px solid red;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        margin-bottom: 10px;
+        display: none;
+    }
+    #registerForm > *{
+        margin-bottom: 10px;
+    }
+    #registerForm > h2{
         color: #001BB0; 
         margin-left: 10px;
     }
@@ -45,7 +66,7 @@ body{
         color: #fff;
         font-weight: 500;
     }
-    #emailSection{
+    #emailLoginSection{
         margin-bottom: 20px;
         font-size: 1.1rem;
         padding: 10px;
@@ -54,7 +75,25 @@ body{
         border: none;
         outline-color: #458EAA;
     }
-    #passwordSection{
+    #emailRegisterSection{
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        padding: 10px;
+        margin: 0px 10px 20px 10px;
+        border-radius: 10px;
+        border: none;
+        outline-color: #458EAA;
+    }
+    #passwordLoginSection{
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0px 10px 20px 10px;
+        border: none;
+        outline-color: #458EAA;
+    }
+    #passwordRegisterSection{
         font-size: 1.1rem;
         margin-bottom: 20px;
         border-radius: 10px;
@@ -69,6 +108,24 @@ body{
         font-size: 1rem;
     }
     #loginButton{
+        background-color: #001BB0;
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 1rem;
+        min-width: 70%;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 7px;
+        border: none;
+        font-weight: bold;
+    }
+    #createAccount{
+        min-width: 70%;
+    }
+    #registerButton{
         background-color: #001BB0;
         color: #fff;
         padding-top: 10px;
@@ -98,17 +155,40 @@ body{
         align-items: center;
         justify-content: space-betwe;
     }
-    #form{
+    #loginForm{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 50%;
         /* margin-left: 50px; */
     }
-    #form > *{
+    #registerForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        display: none;
+        /* margin-left: 50px; */
+    }
+    #loginForm > *{
         margin-bottom: 10px;
     }
-    #form > h2{
+    #loginForm > h2{
+        text-align: center;
+        color: #000000;
+        font-size: 1rem;
+    }
+    #loginForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        /* margin-left: 50px; */
+    }
+    #registerForm > *{
+        margin-bottom: 10px;
+    }
+    #registerForm > h2{
         text-align: center;
         color: #000000;
         font-size: 1rem;
@@ -124,7 +204,7 @@ body{
         margin-left: 30px;
         margin-right: 80px;
     }
-    #emailSection{
+    #emailLoginSection{
         margin-bottom: 20px;
         font-size: 1.1rem;
         padding: 5px;
@@ -134,7 +214,25 @@ body{
         outline-color: #458EAA;
         
     }
-    #passwordSection{
+    #emailRegisterSection{
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        padding: 5px;
+        margin: 0px 10px 20px 10px;
+        border-radius: 7px;
+        border: 1px solid grey;
+        outline-color: #458EAA;
+    }
+    #passwordLoginSection{
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        border-radius: 7px;
+        padding: 5px;
+        margin: 0px 10px 20px 10px;
+        border:  1px solid grey;
+        outline-color: #458EAA;
+    }
+    #passwordRegisterSection{
         font-size: 1.1rem;
         margin-bottom: 20px;
         border-radius: 7px;
@@ -144,6 +242,21 @@ body{
         outline-color: #458EAA;
     }
     #loginButton{
+        background-color: #458EAA;
+        color: #000000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 1rem;
+        min-width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 7px;
+        border: none;
+        font-weight: bold;
+    }
+    #registerButton{
         background-color: #458EAA;
         color: #000000;
         padding-top: 10px;
@@ -173,17 +286,31 @@ body{
         align-items: center;
         justify-content: space-betwe;
     }
-    #form{
+    #loginForm{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 50%;
-        /* margin-left: 50px; */
     }
-    #form > *{
+    #loginForm > *{
         margin-bottom: 10px;
     }
-    #form > h2{
+    #loginForm > h2{
+        text-align: center;
+        color: #000000;
+        font-size: 1rem;
+    }
+    #registerForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        display: none;
+    }
+    #registerForm > *{
+        margin-bottom: 10px;
+    }
+    #registerForm > h2{
         text-align: center;
         color: #000000;
         font-size: 1rem;
@@ -199,7 +326,7 @@ body{
         margin-left: 30px;
         margin-right: 80px;
     }
-    #emailSection{
+    #emailLoginSection{
         margin-bottom: 20px;
         font-size: 1.1rem;
         padding: 5px;
@@ -209,7 +336,25 @@ body{
         outline-color: #458EAA;
         
     }
-    #passwordSection{
+    #emailRegisterSection{
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        padding: 5px;
+        margin: 0px 10px 20px 10px;
+        border-radius: 7px;
+        border: 1px solid grey;
+        outline-color: #458EAA;
+    }
+    #passwordLoginSection{
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        border-radius: 7px;
+        padding: 5px;
+        margin: 0px 10px 20px 10px;
+        border:  1px solid grey;
+        outline-color: #458EAA;
+    }
+    #passwordRegisterSection{
         font-size: 1.1rem;
         margin-bottom: 20px;
         border-radius: 7px;
@@ -219,6 +364,21 @@ body{
         outline-color: #458EAA;
     }
     #loginButton{
+        background-color: #458EAA;
+        color: #000000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 1rem;
+        min-width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 7px;
+        border: none;
+        font-weight: bold;
+    }
+    #registerButton{
         background-color: #458EAA;
         color: #000000;
         padding-top: 10px;
