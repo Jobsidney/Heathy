@@ -18,21 +18,13 @@
         <img src="../images/Healthy.png" alt="The hospital Logo" id="mobileImageLogoWhite" width="200">
 
         
-        <form name="loginForm" id="loginForm">
-                <h2>Login</h2>
-                <input type="email" name="usrName" id="emailLoginSection" placeholder="Enter Your Email" required>
-                <input type="password" name="passwrd" id="passwordLoginSection" placeholder="Enter Your Password" required>
-                <input type="submit" value="Login" id="loginButton"><br>
-                <input type="button" value="Create Account" id="createAccount">
-        </form>
-        <form name="registerForm" id="registerForm">
-                <h2>Register</h2>
-                <input type="email" name="usrName" id="emailRegisterSection" placeholder="Enter Your Email" required>
-                <input type="password" name="password" id="passwordRegisterSection" placeholder="Enter Your Password" required>
-                <input type="submit" value="Register" id="registerButton"><br>
-                <input type="button" value="Login Account" id="registerAccount">
-        </form>
-        
+        <form name="loginForm" id="loginForm" onsubmit="return signUp()">
+                <h2>Sign Up</h2>
+                <input type="email" name="usrName" id="username" placeholder="Enter Your Email" required>
+                <input type="password" name="passwrd" id="password" placeholder="Enter Your Password" required>
+                <input type="submit" value="Sign Up" id="loginButton"><br>
+                <input type="button" value="Log In" id="createAccount">
+        </form>        
     </section>
 
 
