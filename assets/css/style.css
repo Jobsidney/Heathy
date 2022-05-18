@@ -79,6 +79,7 @@ body{
     font-weight: 900;
     margin-top: 14vh;
 }
+#backImage>div button>a{color: white;}
 .FloatCards{
     display: flex;
     align-items: center;
@@ -188,8 +189,8 @@ table{
 }
 a{
     text-decoration: none;
+    
 }
-
 
 /* MEDIA QUERY tablets */
 
