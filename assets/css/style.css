@@ -1,3 +1,4 @@
+
 body{
     background-color: #EBEAF8;
 }
@@ -21,7 +22,7 @@ body{
     color: #0E1658;
     font-weight: 545;
 }
-#NavBar>nav>ul>li>button{
+#NavBar>nav>ul>li>a>button{
     list-style: none;
     margin-right: 10px;
     font-size: large;
@@ -34,13 +35,25 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+#NavBar>nav>ul>li>a>button:hover{
+    background-color: #0E1658;
+    transition: 1s;
+    
+
+}
 
 #backImage{
     background-color: #8AD4DB;
-    
     height: 500px; 
     display: flex;
     flex-direction: row;
+    padding-left: 4%;
+    
+}
+#backImage:hover{
+    padding-left: 8%;
+    scroll-behavior: smooth;
+    transition-duration: 2s;
 }
 .AllMotto{
     display: flex;
@@ -56,12 +69,13 @@ body{
 }
 #backImage>div button{
     background-color: #3CA6A6;
+    background-blend-mode: darken;
     border:none;
     height: 40px;
     width: 30%;
     border-radius: 10px;
     margin-left: 10px;
-    color: white;
+    color: rgb(236, 233, 233);
     font-weight: 900;
     margin-top: 14vh;
 }
@@ -75,7 +89,7 @@ body{
 #working{
     background-color: #0E1658;
     margin-left: 4%;
-    padding: 2px;
+    padding: 10px;
     padding-left: 10px;
     width: 300px;
     text-align: start;
@@ -87,15 +101,27 @@ body{
     background-color: #3491F2;
     color: white;
     margin-right: 6%;
-    padding: 2px;
+    padding: 10px;
     padding-left: 10px;
     width: 300px;
     text-align: start;
     border-radius: 4px;
 }
+#emergency,#working ul{
+    font-size: large;
+}
 #abouts{
     color: #0E1658;
     font-family: poppins;
+    margin-top: 10%;
+    font-size: x-large;
+    text-decoration: underline;
+    padding-left: 4%;
+}
+#AboutSection:hover{
+    padding-left: 8%;
+    scroll-behavior: smooth;
+    transition-duration: 3s;
 }
 #descr{
     display: flex;
@@ -105,9 +131,15 @@ body{
     margin-top: 10%;
     margin-left: 18px;
 }
+.words>.healthy{
+    font-size:large;
+}
 #services{
     color: #0E1658;
     font-family: poppins;
+    margin-top: 10%;
+    font-size: x-large;
+    text-decoration: underline;
 }
 .allCards{
     display: flex;
@@ -116,6 +148,11 @@ body{
 }
 .imageCards{
     margin: 10px;
+}
+.imageCards>h3{
+    color: #0E1658;
+    font-weight: 600;
+    opacity: 0.8;
 }
 .imageCards>img{
     width: 350px;
@@ -143,3 +180,7 @@ footer>div>img{
 table{
     margin-top: 50px;
 }
+a{
+    text-decoration: none;
+}
+
