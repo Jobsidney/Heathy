@@ -146,6 +146,11 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.FirstCards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
 .imageCards{
     margin: 10px;
 }
@@ -155,7 +160,8 @@ body{
     opacity: 0.8;
 }
 .imageCards>img{
-    width: 350px;
+    width: 100%;
+    max-width: 320px;
     border-radius: 0px 40px 0px 40px;
 }
 #footer{
@@ -188,7 +194,7 @@ a{
 /* MEDIA QUERY tablets */
 
 
-@media screen and (min-width:700px) {
+@media screen and (max-width:900px) {
 
     #NavBar>div>img{
         width: 100px;
@@ -324,6 +330,7 @@ a{
         justify-content: center;
         margin-right: 2%;
     }
+
     .imageCards{
         margin: 10px;
     }
@@ -333,7 +340,8 @@ a{
         opacity: 0.8;
     }
     .imageCards>img{
-        width: 260px;
+        width: 100%;
+        max-width: 260px;
         border-radius: 0px 40px 0px 40px;
     }
 
@@ -342,7 +350,7 @@ a{
 
 /* MEDIA QUERY PHONES */
 
-@media screen and (max-width:699px) {
+@media screen and (max-width:700px) {
     #NavBar>div>img{
         width: 100px;
     }
@@ -449,10 +457,10 @@ a{
     }
     #descr{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     #descr>div>img{
-        width: 500px;
+        width: 300px;
     }
     .words{
         margin-top: 10%;
@@ -472,11 +480,18 @@ a{
         text-decoration: underline;
     }
     .allCards{
+        margin-left: 5%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         margin-right: 2%;
     }
+    .FirstCards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    
     .imageCards{
         margin: 10px;
     }
@@ -486,7 +501,204 @@ a{
         opacity: 0.8;
     }
     .imageCards>img{
-        width: 260px;
+        width: 100%;
+        max-width: 260px;
         border-radius: 0px 40px 0px 40px;
     }
+    #footer{
+        background-color: #458EAA;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 400px;
+        margin-top: 100px;
+        padding-right: 100px;
+    }
+    footer>div>img{
+        width: 100px;
+    }
+    #footer>div>table> th,tr{
+        font-size: 130%;
+        color: white;
+        opacity: 0.8;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #NavBar>div>img{
+        width: 90px;
+    }
+    #NavBar>nav>ul>li{
+        list-style: none;
+        margin-right: 10px;
+       
+        color: #0E1658;
+        font-weight: 545;
+        font-size: medium;
+    }
+
+    #NavBar>nav>ul>li>a>button{
+        list-style: none;
+        margin-right: 10px;
+        font-size: small;
+        color: white;
+        font-weight: 545;
+        width: max-content;
+        background-color: #3CA6A6;
+        border: none;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+
+    
+    #backImage{
+        background-color: #86D4FB;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        
+    }
+
+    .AllMotto{
+        display: flex;
+        flex-direction: column;
+        padding-top:30px;
+    }
+    .AllMotto>h1{
+        font-size: small;
+    }
+    #motto{
+        font-size: small;
+        margin-top: 0px;
+    }
+
+    #injection>img{
+        padding-top: 10vh;
+        width: 180px;
+        margin-right: 50px;
+    }
+    #backImage>div button{
+        background-color: #3CA6A6;
+        background-blend-mode: darken;
+        border:none;
+        height: 50px;
+        width: 120px;
+        border-radius: 10px;
+        margin-left: 2px;
+        color: rgb(236, 233, 233);
+        font-weight: 900;
+        margin-top: 1vh;
+    }
+    .FloatCards{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        float: inline-end;
+        margin-top: -40px;
+        margin-left: 2px;
+    }
+    #working{
+        background-color: #0E1658;
+        padding: 10px;
+        padding-left: 2px;
+        width: 300px;
+        text-align: start;
+        color: white;
+        border-radius: 4px;
+    }
+    #emergency{
+        background-color: #3491F2;
+        color: white;
+        padding: 10px;
+        padding-left: 2px;
+        width: 300px;
+        max-height: 200px;
+        text-align: start;
+        border-radius: 4px;
+    }
+    #emergency ul,#working ul{
+        font-size: medium;
+        list-style: none;
+        padding-left: 5px;
+    }
+
+
+    #abouts{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+        padding-left: 4%;
+    }
+    #AboutSection:hover{
+        padding-left: 6%;
+        scroll-behavior: smooth;
+        transition-duration: 3s;
+    }
+    #descr{
+        display: flex;
+        flex-direction: column;
+    }
+    #descr>div>img{
+        width: 300px;
+    }
+    .words{
+        margin-top: 10%;
+        margin-left: 18px;
+    }
+    .words>h3{
+        font-size: xx-large;
+    }
+    .words>.healthy{
+        font-size:x-large;
+    }
+    #services{
+        color: #0E1658;
+        font-family: poppins;
+        margin-top: 10%;
+        font-size: x-large;
+        text-decoration: underline;
+    }
+    .allCards{
+        
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 2%;
+    }
+    .FirstCards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    
+    .imageCards{
+        margin: 10px;
+    }
+    .imageCards>img{
+        width: 100%;
+        max-width: 250px;
+        border-radius: 0px 40px 0px 40px;
+    }
+    #footer{
+        background-color: #458EAA;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 200px;
+        margin-top: 70px;
+        padding-right: 100px;
+    }
+    footer>div>img{
+        width: 100px;
+    }
+    #footer>div>table> th,tr{
+        font-size: 100%;
+ 
+    }
+
+    
 }
