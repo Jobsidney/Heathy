@@ -1,6 +1,7 @@
 
 body{
     background-color: #EBEAF8;
+    font-family: poppins;
 }
 #NavBar{
     display: flex;
@@ -42,7 +43,7 @@ body{
 
 #backImage{
     background-color: #86D4FB;
-    height: 500px; 
+    height: 700px; 
     display: flex;
     flex-direction: row;
     padding-left: 4%;
@@ -129,9 +130,13 @@ body{
 .words{
     margin-top: 10%;
     margin-left: 18px;
+    font-size: X-large;
+    color: #0E1658;
 }
 .words>.healthy{
-    font-size:large;
+    font-size:x-large;
+    font-family: poppins;
+    color: #555557;
 }
 #services{
     color: #0E1658;
@@ -149,26 +154,40 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 5%;
+    justify-content: space-evenly;
 }
 .imageCards{
     margin: 10px;
+    margin-bottom: 0px;
 }
 .imageCards>h3{
     color: #0E1658;
     font-weight: 600;
     opacity: 0.8;
+    font-size: x-large;
+    font-family: Amiri;
+    text-align: start;
+    text-decoration: underline;
 }
 .imageCards>img{
     width: 100%;
     max-width: 320px;
     border-radius: 0px 40px 0px 40px;
 }
+.imageCards div{
+    font-size: x-large;
+    font-family: poppins;
+    color: #474747;
+}
+.imageCard div{
+    font-size: large;
+}
 #footer{
     background-color: #458EAA;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    height: 400px;
+    height: 300px;
     margin-top: 100px;
     padding-right: 100px;
 }
@@ -180,10 +199,14 @@ footer>div>img{
     color: white;
     opacity: 0.8;
    
-    text-align: left;
+    text-align: start;
 }
 table{
     margin-top: 50px;
+}
+table th,tr,td{
+    padding-left: 50px;
+    text-align: start;
 }
 a{
     text-decoration: none;
@@ -261,6 +284,9 @@ a{
     .words>.healthy{
         font-size:x-large;
     }
+    .imageCards div{
+        font-size: x-large;
+    }
     #services{
         margin-top: 10%;
         font-size: x-large;
@@ -275,6 +301,9 @@ a{
     .imageCards>img{
         width: 100%;
         max-width: 260px;
+    }
+    .imageCards div{
+        font-size: x-large;
     }
 
     
@@ -299,6 +328,7 @@ a{
 
     #backImage{
         padding-left: 0;
+        height: 600px; 
         
     }
 
@@ -358,7 +388,7 @@ a{
         font-size:x-large;
     }
     .words>.healthy{
-        font-size:large;
+        font-size:x-large;
     }
     #services{
         margin-top: 10%;
@@ -384,6 +414,9 @@ a{
         width: 100%;
         max-width: 260px;
         border-radius: 0px 20px 0px 20px;
+    }
+    .imageCards div{
+        font-size: x-large;
     }
     #footer{
         height: 250px;
@@ -489,7 +522,7 @@ a{
         font-size: xx-large;
     }
     .words>.healthy{
-        font-size:x-large;
+        font-size:xx-large;
     }
     #services{
         margin-top: 10%;
@@ -509,11 +542,16 @@ a{
     .imageCards{
         margin: 10px;
         margin-left: 0px;
+        background-color: white;
+        border-radius: 0px 20px 0px 0px;
     }
     .imageCards>img{
         width: 100%;
         max-width: 250px;
-        border-radius: 0px 20px 0px 20px;
+        border-radius: 0px 20px 0px 0px;
+    }
+    .imageCards div{
+        font-size: large;
     }
     #footer{
         height: 200px;

@@ -8,23 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/loginPage.css">
-    <script src="https://kit.fontawesome.com/edfee8f41c.js" crossorigin="anonymous"></script>
     <title>Login Page</title>
 </head>
 <body>
-    <section id="mobileLoginContainer">
+    <section class="mobileLoginContainer">
 
-        <img src="../images/LogoFooterNav.png" alt="The hospital Logo" id="mobileImageLogoBlue" width="150">
+        <img src="../images/LogoFooterNav.png" alt="The hospital Logo" class="mobileImageLogoBlue" width="150">
         <img src="../images/Healthy.png" alt="The hospital Logo" id="mobileImageLogoWhite" width="200">
 
         
-        <form name="loginForm" id="loginForm">
+        <form name="loginForm" id="loginForm" class="loginForm" onsubmit="return login()">
                 <h2>Login</h2>
-                <input type="email" name="usrName" id="username" placeholder="Enter Your Email" required>
-                <input type="password" name="passwrd" id="password" placeholder="Enter Your Password" required>
-                <input type="submit" value="Log in" id="loginButton"><br>
+                <input type="email" name="usrName" id="username" class="inputSizing" placeholder="Enter Your Email" required>
+                <input type="password" name="passwrd" id="password" class="inputSizing" placeholder="Enter Your Password" required>
+                <input type="submit" value="Log in" class="loginButton"><br>
         </form>        
-        <a href="../html/signUp.html" id="createAccount">Sign Up</a>
+        <a href="../html/signUp.html" class="formLinks">Don't have any account? Sign Up</a>
     </section>
 
 
