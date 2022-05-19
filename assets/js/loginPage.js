@@ -13,7 +13,12 @@ function signUp(){
 
 }
 
-function login(){
+
+const btnSubmit = document.querySelector(".btnSubmit")
+
+btnSubmit.addEventListener("click", (e) => {
+    e.preventDefault();
+
 
     var email = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -21,11 +26,16 @@ function login(){
     var userDetails = localStorage.getItem("UserDetails");
     var userData = JSON.parse(userDetails);
 
-
-    if(userDetails = userData.userEmail && password == userData.userPassword){
-        alert("Hello World");
+    if(email = userData.userEmail && password == userData.userPassword){
+        loadNewPage();
     }
     else{
         alert("Wrong Password");
     }
+})
+
+function loadNewPage(){
+    window.location.href = '../html/hospital.html';
+ 
 }
+
