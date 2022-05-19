@@ -1,6 +1,7 @@
 
 body{
     background-color: #EBEAF8;
+    font-family: poppins;
 }
 #NavBar{
     display: flex;
@@ -42,7 +43,7 @@ body{
 
 #backImage{
     background-color: #86D4FB;
-    height: 500px; 
+    height: 600px; 
     display: flex;
     flex-direction: row;
     padding-left: 4%;
@@ -129,9 +130,13 @@ body{
 .words{
     margin-top: 10%;
     margin-left: 18px;
+    font-size: X-large;
+    color: #0E1658;
 }
 .words>.healthy{
     font-size:x-large;
+    font-family: poppins;
+    color: #555557;
 }
 #services{
     color: #0E1658;
@@ -149,20 +154,34 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 5%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .imageCards{
     margin: 10px;
+    margin-bottom: 0px;
 }
 .imageCards>h3{
     color: #0E1658;
     font-weight: 600;
     opacity: 0.8;
+    font-size: x-large;
+    font-family: Amiri;
+    text-align: start;
+    text-decoration: underline;
 }
 .imageCards>img{
     width: 100%;
     max-width: 320px;
     border-radius: 0px 40px 0px 40px;
+}
+.imageCards div{
+    font-size: x-large;
+    font-family: poppins;
+    overflow: auto;
+    color: #474747;
+}
+.imageCard div{
+    font-size: large;
 }
 #footer{
     background-color: #458EAA;
@@ -266,6 +285,9 @@ a{
     .words>.healthy{
         font-size:x-large;
     }
+    .imageCards div{
+        font-size: x-large;
+    }
     #services{
         margin-top: 10%;
         font-size: x-large;
@@ -280,6 +302,9 @@ a{
     .imageCards>img{
         width: 100%;
         max-width: 260px;
+    }
+    .imageCards div{
+        font-size: x-large;
     }
 
     
@@ -389,6 +414,9 @@ a{
         width: 100%;
         max-width: 260px;
         border-radius: 0px 20px 0px 20px;
+    }
+    .imageCards div{
+        font-size: x-large;
     }
     #footer{
         height: 250px;
@@ -521,6 +549,9 @@ a{
         width: 100%;
         max-width: 250px;
         border-radius: 0px 20px 0px 0px;
+    }
+    .imageCards div{
+        font-size: large;
     }
     #footer{
         height: 200px;
