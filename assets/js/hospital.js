@@ -1,39 +1,39 @@
 const hospData = [
   {
-    hospName: "Karen Hospital",
-    location: "Nairobi",
-    consultationFee: 2000,
-    specialty: "Heart Conditions, Cancer",
+    hospName: "Name: Karen Hospital",
+    location: "Location: Nairobi",
+    consultationFee: "Consultation: Ksh 2000",
+    specialty: "Specialty: Heart Conditions, Cancer",
   },
   {
-    hospName: "Agha Khan Hospital",
-    location: "Nairobi",
-    consultationFee: 3000,
-    specialty: "Cancer, Maternal Health",
+    hospName: "Name:Agha Khan Hospital",
+    location: "Location: Nairobi",
+    consultationFee: "Consultation:Ksh 3000",
+    specialty: "Specialty: Cancer, Maternal Health",
   },
   {
-    hospName: "Kenyatta National Hospital",
-    location: "Nairobi",
-    consultationFee: 2000,
-    specialty: "Pain Mananagement, Cancer",
+    hospName: "Name: Kenyatta National Hospital",
+    location: "Location: Nairobi",
+    consultationFee:"Consultation: Ksh 2000",
+    specialty: "Specialty: Pain Mananagement, Cancer",
   },
   {
-    hospName: "Nairobi Hospital",
-    location: "Nairobi",
-    consultationFee: 2500,
-    specialty: "Reproductive Health, Diabetes",
+    hospName: "Name: Nairobi Hospital",
+    location: "Location: Nairobi",
+    consultationFee: "Consultation: Ksh 2500",
+    specialty: "Specialty: Reproductive Health, Diabetes",
   },
   {
-    hospName: "Nairobi West Hospital",
-    location: "Nairobi",
-    consultationFee: 2500,
-    specialty: "Peadiatric health",
+    hospName: "Name: Nairobi West Hospital",
+    location: "Location: Nairobi",
+    consultationFee: "Consultation: Ksh2500",
+    specialty: "Specialty: Peadiatric health",
   },
   {
-    hospName: "M.P Shah Hospital",
-    location: "Nairobi",
-    consultationFee: 3000,
-    specialty: "Heart Conditions, Cancer"
+    hospName: "Name: M.P Shah Hospital",
+    location: "Location: Nairobi",
+    consultationFee: "Consultation: Ksh 3000",
+    specialty: "Specialty: Heart Conditions, Cancer"
   }
 ];
 //constants for  Karen Hospital
