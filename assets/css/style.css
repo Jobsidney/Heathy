@@ -131,7 +131,7 @@ body{
     margin-left: 18px;
 }
 .words>.healthy{
-    font-size:large;
+    font-size:x-large;
 }
 #services{
     color: #0E1658;
@@ -149,6 +149,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 5%;
+    justify-content: space-around;
 }
 .imageCards{
     margin: 10px;
@@ -168,7 +169,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    height: 400px;
+    height: 300px;
     margin-top: 100px;
     padding-right: 100px;
 }
@@ -180,10 +181,14 @@ footer>div>img{
     color: white;
     opacity: 0.8;
    
-    text-align: left;
+    text-align: start;
 }
 table{
     margin-top: 50px;
+}
+table th,tr,td{
+    padding-left: 50px;
+    text-align: start;
 }
 a{
     text-decoration: none;
@@ -358,7 +363,7 @@ a{
         font-size:x-large;
     }
     .words>.healthy{
-        font-size:large;
+        font-size:x-large;
     }
     #services{
         margin-top: 10%;
@@ -489,7 +494,7 @@ a{
         font-size: xx-large;
     }
     .words>.healthy{
-        font-size:x-large;
+        font-size:xx-large;
     }
     #services{
         margin-top: 10%;
@@ -509,11 +514,13 @@ a{
     .imageCards{
         margin: 10px;
         margin-left: 0px;
+        background-color: white;
+        border-radius: 0px 20px 0px 0px;
     }
     .imageCards>img{
         width: 100%;
         max-width: 250px;
-        border-radius: 0px 20px 0px 20px;
+        border-radius: 0px 20px 0px 0px;
     }
     #footer{
         height: 200px;
