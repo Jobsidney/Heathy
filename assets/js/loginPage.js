@@ -9,8 +9,23 @@ function signUp(){
 
     var convertToJson = JSON.stringify(userDetails);
     localStorage.setItem("UserDetails", convertToJson);
+    alert("Sign up successful");
 
-    alert("User Added Successfully");
 }
 
-signUpButton.addEventListener = ("click", signUp)
+function login(){
+
+    var email = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    var userDetails = localStorage.getItem("UserDetails");
+    var userData = JSON.parse(userDetails);
+
+
+    if(userDetails = userData.userEmail && password == userData.userPassword){
+        alert("Hello World");
+    }
+    else{
+        alert("Wrong Password");
+    }
+}
