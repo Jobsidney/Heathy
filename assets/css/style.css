@@ -43,7 +43,7 @@ body{
 
 #backImage{
     background-color: #86D4FB;
-    height: 600px; 
+    height: 700px; 
     display: flex;
     flex-direction: row;
     padding-left: 4%;
@@ -177,7 +177,6 @@ body{
 .imageCards div{
     font-size: x-large;
     font-family: poppins;
-    overflow: auto;
     color: #474747;
 }
 .imageCard div{
@@ -329,6 +328,7 @@ a{
 
     #backImage{
         padding-left: 0;
+        height: 600px; 
         
     }
 
