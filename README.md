@@ -3,6 +3,8 @@
 ## DESCRIPTION
 Healthy is a website that specializes in medical services. The services are brought closer to the user for easy access at any time. Any patient can be able to book an appointment at any time with any of the doctors that are specialized in a specific section in medicine i.e Heart issues.
 Below is a clear working example of the page.
+<br>
+<img src="../Healthy/assets/images/demoDoc.png">
 ## [FEATURES](https://jobsidney.github.io/Heathy/)
 - Well Designed Interface(UI).
 - intensive use of Vanilla css for design
