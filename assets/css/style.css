@@ -159,6 +159,7 @@ body{
 .imageCards{
     margin: 10px;
     margin-bottom: 0px;
+    max-width:400px
 }
 .imageCards>h3{
     color: #0E1658;
